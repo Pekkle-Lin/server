@@ -94,7 +94,8 @@ public class GlobalConstant {
     public static String GRAPH_MYSQL_PASSWORD = "MYSQL_GRAPH_PASSWORD";
 
     public static String UPDATE_JOB_CONTAINER = "pub.domeos.org/rolling-updater:v0.1";
-    public static String K8S_JOB_VERSION = "extensions/v1beta1";
+//    public static String K8S_JOB_VERSION = "extensions/v1beta1";
+    public static String K8S_JOB_VERSION = "batch/v1";
     public static int GITLAB_PERPAGESIZE = 10;
     public static String TOMCAT_KEEPALIVETIMEOUT = "TOMCAT_KEEPALIVETIMEOUT";
     public static String TOMCAT_CONNECTIONTIMEOUT = "TOMCAT_CONNECTIONTIMEOUT";

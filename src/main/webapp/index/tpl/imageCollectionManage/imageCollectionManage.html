@@ -12,7 +12,7 @@
       </div>
       <p class="txt-prompt" ng-if="!isShowAdd"><i class="fa fa-info-circle icon-algin-right"></i>只有管理员才能添加基础镜像。添加完成后可以作为工程通用配置里的基础镜像使用，也可以直接部署。</p>
       <ul class="add-image" ng-form="ng-form" ng-class="{'need-valid':needValid.value}" name="imageForm" ng-show="isShowAdd">
-        <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>DomeOS会验证镜像的存在性，请通过浏览器访问“镜像仓库/v2/镜像名称/tags/list”确认存在该镜像版本。可以通过浏览器访问“镜像仓库/v2/_catalog”查看该仓库中存在的镜像。</p>
+        <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>DOME会验证镜像的存在性，请通过浏览器访问“镜像仓库/v2/镜像名称/tags/list”确认存在该镜像版本。可以通过浏览器访问“镜像仓库/v2/_catalog”查看该仓库中存在的镜像。</p>
         <li><span class="info-name">镜像所在仓库</span>
           <input class="ui-input-info ui-input-white" ng-model="newImageInfo.registry" ng-pattern="/^[^\s]*$/" name="registry" required="required"/>
         </li>
@@ -58,11 +58,11 @@
         </tbody>
       </table>
     </tab>
-    <tab heading="官方仓库" active="tabActive[1].active" ui-sref="imageCollectionManage.publicimages">
-      <div ng-if="tabActive[1].active" style="margin: 0 -20px;">
-        <div ng-include="'index/tpl/imageCollectionManage/publicImages/publicImages.html'"></div>
-      </div>
-    </tab>
+    <!--<tab heading="官方仓库" active="tabActive[1].active" ui-sref="imageCollectionManage.publicimages">-->
+      <!--<div ng-if="tabActive[1].active" style="margin: 0 -20px;">-->
+        <!--<div ng-include="'index/tpl/imageCollectionManage/publicImages/publicImages.html'"></div>-->
+      <!--</div>-->
+    <!--</tab>-->
     <tab heading="项目镜像" active="tabActive[2].active" ui-sref="imageCollectionManage.proimages">
       <loading ng-if="isLoading"></loading>
       <div class="image-option"><span class="registry-address">仓库地址：{{projectRegistry}}</span>
@@ -71,7 +71,7 @@
         </div>
       </div>
       <div class="mod-tips-info-image">
-        <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>私有镜像仓库中存在的镜像如下，DomeOS按照项目名对镜像进行了分类，方便查看。</p>
+        <p class="txt-prompt"><i class="fa fa-info-circle icon-algin-right"></i>私有镜像仓库中存在的镜像如下，DOME按照项目名对镜像进行了分类，方便查看。</p>
       </div>
       <div class="image-project-collection">
         <ul class="image-project-collection-list">
@@ -89,7 +89,7 @@
             <div class="image-project-collection-item text-center">
               <div class="image-project-collection-header"><a class="not-project-image-name image-project-collection-name" ng-click="gotoNotProjectImageDetail(otherImages)">其他镜像</a></div>
               <div class="image-project-collection-content">
-                <div class="image-project-collection-info-description">DomeOS在私有镜像仓库中读取到的，无法分类的镜像信息</div>
+                <div class="image-project-collection-info-description">DOME在私有镜像仓库中读取到的，无法分类的镜像信息</div>
               </div>
               <div class="image-project-collection-content not-project-image-bottom"><span class="image-project-collection-info embed">镜像数：<span class="txt-bright" ng-cloak="ng-cloak">{{otherImages.length}}</span></span></div>
             </div>
