@@ -34,25 +34,25 @@
                     <artifactId>spring-boot-starter-logging</artifactId>
                 </exclusion>
                 <!--<exclusion>-->
-                    <!--<groupId>org.springframework.boot</groupId>-->
-                    <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
+                <!--<groupId>org.springframework.boot</groupId>-->
+                <!--<artifactId>spring-boot-starter-tomcat</artifactId>-->
                 <!--</exclusion>-->
             </exclusions>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.apache.tomcat.embed</groupId>-->
-            <!--<artifactId>tomcat-embed-core</artifactId>-->
-            <!--<version>8.0.36</version>-->
+        <!--<groupId>org.apache.tomcat.embed</groupId>-->
+        <!--<artifactId>tomcat-embed-core</artifactId>-->
+        <!--<version>8.0.36</version>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId>org.apache.tomcat.embed</groupId>-->
-            <!--<artifactId>tomcat-embed-websocket</artifactId>-->
-            <!--<version>8.0.36</version>-->
+        <!--<groupId>org.apache.tomcat.embed</groupId>-->
+        <!--<artifactId>tomcat-embed-websocket</artifactId>-->
+        <!--<version>8.0.36</version>-->
         <!--</dependency>-->
         <!--<dependency>-->
-            <!--<groupId>org.apache.tomcat.embed</groupId>-->
-            <!--<artifactId>tomcat-embed-el</artifactId>-->
-            <!--<version>8.0.36</version>-->
+        <!--<groupId>org.apache.tomcat.embed</groupId>-->
+        <!--<artifactId>tomcat-embed-el</artifactId>-->
+        <!--<version>8.0.36</version>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -258,8 +258,8 @@
             <version>0.4.0</version>
         </dependency>
         <!--<dependency>-->
-            <!--<groupId>org.springframework.boot</groupId>-->
-            <!--<artifactId>spring-boot-starter-undertow</artifactId>-->
+        <!--<groupId>org.springframework.boot</groupId>-->
+        <!--<artifactId>spring-boot-starter-undertow</artifactId>-->
         <!--</dependency>-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -270,6 +270,11 @@
             <groupId>com.h2database</groupId>
             <artifactId>h2</artifactId>
             <scope>test</scope>
+        </dependency>
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>javax.servlet-api</artifactId>
+            <version>3.1.0</version>
         </dependency>
     </dependencies>
 
